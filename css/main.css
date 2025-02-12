@@ -1,0 +1,403 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+.amiibo-name {
+    font-family: 'Bitter', serif;
+}
+p{
+    color: #fff;
+}
+body{
+    background-color: #343a40;
+}
+#navbar {
+    z-index: 10;
+}
+
+
+#ribbon {
+    background-color: rgb(219, 26, 26);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+}
+
+#ribbon::after {
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#separator-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-ribbon .content {
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#birthday {
+    background-color: rgb(219, 26, 26);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#birthday img {
+    position: relative;
+    margin-top: -30px;
+}
+
+#games {
+    background: rgb(255, 255, 255);
+    background: url(../img/bg-02.png), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
+}
+
+.text-shadow {
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* FORMULARIO */
+.formulario {
+    background-color: #ffffff; /* Fondo blanco del formulario */
+    padding: 40px; /* Espaciado interno más grande */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Ancho más grande */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Colocar elementos en columna */
+
+}
+
+.formulario label {
+    color: #333333; /* Color del texto de las etiquetas */
+    font-size: 1.2em; /* Tamaño de fuente más grande para las etiquetas */
+}
+
+.formulario .form-control {
+    font-size: 1.2em; /* Tamaño de fuente más grande para las entradas */
+    padding: 10px; /* Espaciado interno más grande para las entradas */
+    width: 100%; /* Hacer que las entradas ocupen todo el ancho del formulario */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos */
+}
+
+.formulario .btn {
+    background-color: #ff0000; /* Color del botón */
+    border: none;
+    font-size: 1.2em; /* Tamaño de fuente más grande para el botón */
+    padding: 10px 20px; /* Espaciado interno más grande para el botón */
+    color: #fff; /* Color del texto del botón */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.formulario .btn:hover {
+    background-color: #ff3333; /* Color del botón al pasar el cursor */
+    box-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333, 0 0 30px #ff3333; /* Sombra brillante */
+}
+
+.formulario .form-check-label {
+    color: #333333; /* Color del texto del checkbox */
+    font-size: 1.2em; /* Tamaño de fuente más grande para el texto del checkbox */
+}
+
+.formulario .form-check {
+    display: flex;
+    align-items: center; /* Alinear el checkbox y su etiqueta al centro */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+#separator-amiibos {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-amiibos .content {
+    background: url(../img/bg-03.png);
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#separator-amiibos-footer {
+    height: 20vw;
+}
+
+
+#amiibos {
+    background: url(../img/bg-01.png), url(../img/bg-03.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+}
+
+.amiibo {
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.amiibo:hover {
+    transform: scale(1.05);
+}
+
+.amiibo-name {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#play {
+    background: url(../img/bg-04.png);
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
+
+#footer {
+    background: url();
+    background-color: rgb(224, 144, 24);
+    background-size: 1500px 50px;
+}
+
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.promo {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+    color: aliceblue;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.logoimg {
+    border-radius: 20px;
+}
+
+.transparent-navbar {
+    background-color: transparent;
+    /* Fondo transparente */
+    transition: background-color 0.3s;
+    /* Transición suave */
+}
+
+.transparent-navbar.scrolled {
+    background-color: #343a40;
+    /* Color sólido después de hacer scroll */
+}
+
+
+/* GALERIA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    padding: 15px 20px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: rgb(255, 0, 76);
+    padding: 15px 20px;
+}
+
+header .navbar-brand img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff004c;
+}
+
+header ul.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 10px 20px;
+    }
+
+    header ul.show {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    header ul li a {
+        color: #fff;
+    }
+}
+
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+.BEATS {
+    font-size: 150px;
+    color: #a3001b; /* Cambia el color del texto a un tono naranja */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra suave al texto */
+    letter-spacing: 5px; /* Añade un espacio entre letras */
+    padding: 20px; /* Añade un espacio alrededor del texto */
+    border-radius: 10px; /* Añade bordes redondeados */
+    transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Agrega un efecto de hover para hacerlo aún más atractivo */
+.BEATS:hover {
+    transform: scale(1.1); /* Escala ligeramente el texto al pasar el ratón sobre él */
+    color: #ff1a75; /* Cambia el color del texto al pasar el ratón */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8); /* Ajusta la sombra al pasar el ratón */
+}
+
+
+/* RAnKING */
+
+
+

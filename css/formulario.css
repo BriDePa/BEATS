@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Honk&family=Poetsen+One&family=Satisfy&family=Sixtyfour:SCAN@-14&display=swap');
+
+body {
+    font-family: 'Bitter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    border-radius: 10%;
+}
+
+.formulario {
+    background-color: #bb0000;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.formulario label {
+    color: #f8f8f8;
+    font-size: 20px;
+}
+
+.formulario .form-control {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formulario .btn {
+    background-color: #ff0000;
+    border: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.formulario .btn:hover {
+    background-color: #ff3333;
+    box-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333, 0 0 30px #ff3333;
+}
+
+.formulario .form-check-label {
+    color: #ffd900;
+    font-size: 1.2em;
+}
+
+.formulario .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 10px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+}

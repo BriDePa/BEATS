@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEATS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Honk&family=Poetsen+One&family=Satisfy&family=Sixtyfour:SCAN@-14&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="headher">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.jpeg" alt="Logo" width="50" class="logoimg">
+        </a>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                ☰
+            </div>
+            <ul id="nav-ul">
+                <li class="nav-item"> <a class="nav-link" href="Principal.html">Inicio</a></li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="Galeria.html">Ranking</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="Artistas.html">Artistas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://music.youtube.com/">Youtube Music</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://www.youtube.com/">Spotify</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        });
+
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navUl = document.getElementById('nav-ul');
+            navUl.classList.toggle('show');
+        });
+    </script>
+
+
+    <!-- VIDEO -->
+    <main id="hero">
+        <div class="promo">
+            <p class="text-shadow text-warning h3">Listo para esta experiencia musical?</p>
+            <p class="BEATS">BEATS</p>
+            <p>by: BlurryFace</p>
+        </div>
+        <video autoplay loop>
+            <source src="video/The Weeknd - Blinding Lights.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </main>
+
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+        <div id="birthday" class="container w- pl-5 rounded-lg">
+            <div class="row align-items-center">
+                <div class="col-sm col-sm p-3" id="description">
+                    <img src="images/image01.jpeg" class="w-75 mx-auto d-block" alt="">
+                </div>
+                <div class="col-sm p3 text-light text-center">
+                    <p class="text-warning h3"> recomendacion del dia</p>
+                    <h4 class="h2 text-shadow"> THE WEEKND</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SEPARADOR DE RIBBON -->
+    <!-- <div id="separator-ribbon">
+        <div class="content bg-warning">
+        </div>
+    </div> -->
+    <!-- GAMES -->
+    <!-- <div id="games">
+        <div class="container-md p-5">
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1"> albumes recomendados</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="images/card01.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">HIGH VOLTAGE</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="images/thriller.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">THILLER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="images/card03.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">CREEP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col">
+                    <h3 class="text-center" style="color: var(--bs-blue);"> MAS EN LAS PLATAFORMAS DE</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2"><a href="https://open.spotify.com/intl-es"> Spotify</a></div>
+                <div class="col-2"><a href="https://music.youtube.com/"> YT Music</a></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- SEPARADOR AMIIBOS -->
+    <!-- <div id="separator-amiibos">
+        <div class="content bg-danger"></div>
+    </div>
+
+    <div id="amiibos" class="px-5 pb-5 bg-danger">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text-shadow h1"> HOLA </h2>
+            </div>
+            <form class="formulario" id="miFormulario">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputUsername">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Nombre de Usuario">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            ESTOY LISTO
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+
+            <script>
+                document.getElementById('miFormulario').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Evita el envío del formulario para validación
+
+                    var usuario = document.getElementById('inputUsername').value;
+                    var email = document.getElementById('inputEmail4').value;
+                    var password = document.getElementById('inputPassword4').value;
+
+                    if (usuario === 'BLURRYFACE' && email === 'deymarbrian02@gmail.com' && password === '12012005') {
+                        alert('Datos correctos. Bienvenido, ' + usuario + '!');
+                        // Aquí puedes agregar la lógica para redirigir al usuario o realizar otra acción
+                    } else {
+                        alert('Datos incorrectos. Por favor, inténtalo de nuevo.');
+                    }
+                });
+            </script> -->
+            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <img src="images/figure01.jpeg" alt="" class="w-100 amiibo">
+                    <div class="text-center"><span>THE NEIGHBOURHOUD</span></div>
+                </div>
+                <div class="col">
+                    <img src="images/figure02.jpeg" alt="" class="w-100 amiibo">
+                    <div class="text-center"><span>MICHAEL JACKSON</span></div>
+                </div>
+                <div class="col">
+                    <img src="images/figure03.jpeg" alt="" class="w-100 amiibo">
+                    <div class="text-center"><span>GORILLAZ</span></div>
+                </div>
+                <div class="col">
+                    <img src="images/figura04.jpeg" alt="" class="w-100 amiibo">
+                    <div class="text-center"><span>GUSTAVO CERATI</span></div>
+                </div>
+            </div> -->
+            <!-- <div class="row py-5">
+                <div class="col text-center">
+                    <a href="#" class="link-dark">
+                        <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">
+                            Amiibo
+                        </button>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    <!-- </div>
+    <div id="separator-amiibos-footer" class="content bg-danger">
+    </div> -->
+
+
+    <!-- AMIIBOS -->
+    <!-- <div id="play">
+        <div class="container-sm p-5">
+            <h3 class="text-center h1">Isabelle y amigos en la obra de Nintendo</h3>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-3 d-none d-md-block">
+                    <img src="images/theweekndpng.jpeg" class="w-100" alt="The Weeknd">
+                </div>
+                <div class="col-9">
+                    <div class="row justify-content-md-center">
+                        <div class="col p-1">
+                            <div class="card bg-primary text-white">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/albumTW.jpeg" class="w-100" alt="Album TW">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Titulo de la tarjeta</h5>
+                                            <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-1">
+                            <div class="card bg-warning text-white">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Titulo de la tarjeta 2</h5>
+                                            <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/albumTW2.jpeg" class="w-100" alt="Album TW 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col p-1">
+                            <div class="card bg-danger text-white">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/albumTW3.jpeg" class="w-100" alt="Album TW 3">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Titulo de la tarjeta 3</h5>
+                                            <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-1">
+                            <div class="card bg-success text-white">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Titulo de la tarjeta 4</h5>
+                                            <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/albumTW4.jpeg" class="w-100" alt="Album TW 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- PLAY NINTENDO -->
+
+    <!-- FOOTER -->
+    <div id="footer" class="p-5 content bg-dark ">
+        <div class="container w-50 pt-5">
+            <div class="row row-cols-2 justify-content-md-center">
+                <div class="col text-center">
+                    <a href="https://wa.me/59165991669" target="_blank">
+                        <button class="btn btn-lg rounded-pill btn-warning w-100 p-3 shadow-sm font-weight-bold">
+                            Atención al Cliente
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col text-center font-weight-light">
+                    <p>Bienvenidos a mi página oficial de música, donde la pasión por el arte se encuentra con la
+                        excelencia</p>
+                    <p>educativa. Soy Deymar Brian Patty y, junto a mi docente tutor, Juan Marcos Miranda Nina, te </p>
+                    <p>ofrecemos un espacio dedicado al aprendizaje musical integral. Aquí encontrarás </p>
+                    <p>recursos educativos innovadores y una comunidad vibrante que comparte tu amor</p>
+                    <p>por la música. Con la guía experta de Juan Marcos y mi dedicación, te invitamos a emprender este
+                    </p>
+                    <p>emocionante viaje musical y descubrir todo tu potencial artístico. ¡Únete a nosotros y comienza
+                        tu </p>
+                    <p>aventura musical hoy mismo!</p>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+    </div>
+
+
+
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
